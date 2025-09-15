@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travaux réalisés</title>
+  <style>
+    body {
+      font-family: Calibri, sans-serif;
+      background-color: #f5f5dc; /* beige */
+      color: #2f4f4f;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      text-align: center;
+      background-color: #d0e6d0; /* vert clair */
+      padding: 2rem;
+      border-bottom: 4px solid #a9c9a9;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #2f4f4f;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+      color: #3f5f3f;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 2rem auto;
+      max-width: 800px;
+      gap: 2rem;
+    }
+    .card {
+      background-color: #d0e6d0;
+      padding: 1rem 1.5rem;
+      border-radius: 12px;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+      color: #2f4f4f;
+      width: 100%;
+      transition: background-color 0.3s, transform 0.2s;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .card:hover {
+      background-color: #c0dcbf;
+      transform: translateY(-3px);
+    }
+    .card span {
+      font-weight: bold;
+      display: block;
+    }
+    .card img {
+      margin-top: 0.5rem;
+      border-radius: 8px;
+      max-width: 100%;
+      height: auto;
+      box-shadow: 1px 1px 4px rgba(0,0,0,0.15);
+    }
+    footer {
+      background-color: #d0e6d0;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      border-top: 4px solid #a9c9a9;
+      color: #2f4f4f;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Travaux réalisés</h1>
+    <p>Exemple de projets universitaires</p>
+  </header>
+
+  <main>
+    <a href="https://misakiuo.github.io/carte_des_temps_strasbourg/" target="_blank" class="card">
+      <span>1. Mémoire en M1 (5-6/2025)</span>
+      Invention d’une méthodologie automatisée et réprésentation cartographique des temps des déplacements vers la mobilité décarbonée (18/20)
+      <img src="images/1_memoire.png" alt="Aperçu du mémoire">
+    </a>
+
+    <a href="https://github.com/misakiuo/observatoire-territoriale-parc-national-iriomote-ishigaki" target="_blank" class="card">
+      <span>2. Site web d’observatoire territorial du Parc national d'Iriomote-Ishigaki au Japon(4/2025)</span>
+      Cartographie dynamique (2D/3D/interactive) et representations graphiques sous ArcGIS Online & Analyse territoriale & Infographie
+      <img src="images/2_observatoire.png" alt="Aperçu de l'observatoire territorial">
+    </a>
+
+    <a href="#" target="_blank" class="card">
+      <span>3. Page web HTML du vieillissement démographique (4/2025)</span>
+      Géovisualisation & Datavisualisation & infographie
+      <img src="images/3_vieillissement.png" alt="Aperçu du vieillissement démographique">
+    </a>
+  </main>
+
+  <footer>
+    © 2025 Misaki UOZUMI — Dernière mise à jour : le 15 septembre 2025
+  </footer>
+</body>
+</html>
