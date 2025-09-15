@@ -4,84 +4,107 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Travaux réalisés</title>
-  <style>
-    body {
-      font-family: Calibri, sans-serif;
-      background-color: #f5f5dc; /* beige */
-      color: #2f4f4f;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-    header {
-      text-align: center;
-      background-color: #d0e6d0; /* vert clair */
-      padding: 2rem;
-      border-bottom: 4px solid #a9c9a9;
-    }
+<style>
+  body {
+    font-family: Calibri, sans-serif;
+    background-color: #f5f5dc; /* beige */
+    color: #2f4f4f;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  header {
+    text-align: center;
+    background-color: #d0e6d0; /* vert clair */
+    padding: 2rem;
+    border-bottom: 4px solid #a9c9a9;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #2f4f4f;
+  }
+  header p {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    color: #3f5f3f;
+  }
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem auto;
+    max-width: 800px;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+  .card {
+    background-color: #d0e6d0;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    color: #2f4f4f;
+    width: 100%;
+    max-width: 600px;
+    transition: background-color 0.3s, transform 0.2s;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centre le contenu */
+    text-align: center;  /* texte centré */
+    gap: 0.75rem;
+  }
+  .card:hover {
+    background-color: #c0dcbf;
+    transform: translateY(-3px);
+  }
+  .card span {
+    font-weight: bold;
+    font-size: 1.1rem;
+    display: block;
+  }
+  .card img {
+    margin-top: 0.5rem;
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.15);
+  }
+  footer {
+    background-color: #d0e6d0;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    border-top: 4px solid #a9c9a9;
+    color: #2f4f4f;
+  }
+
+  /* --- Ajustements pour smartphone --- */
+  @media (max-width: 600px) {
     header h1 {
-      margin: 0;
-      font-size: 2rem;
-      color: #2f4f4f;
+      font-size: 1.6rem;
     }
     header p {
-      margin-top: 0.5rem;
-      font-size: 1.1rem;
-      color: #3f5f3f;
-    }
-    main {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 2rem auto;
-      max-width: 800px;
-      gap: 2rem;
+      font-size: 1rem;
     }
     .card {
-      background-color: #d0e6d0;
-      padding: 1rem 1.5rem;
-      border-radius: 12px;
-      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
-      color: #2f4f4f;
-      width: 100%;
-      transition: background-color 0.3s, transform 0.2s;
-      text-decoration: none;
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-    }
-    .card:hover {
-      background-color: #c0dcbf;
-      transform: translateY(-3px);
+      padding: 1rem;
+      font-size: 0.95rem;
     }
     .card span {
-      font-weight: bold;
-      display: block;
+      font-size: 1rem;
     }
-    .card img {
-      margin-top: 0.5rem;
-      border-radius: 8px;
-      max-width: 100%;
-      height: auto;
-      box-shadow: 1px 1px 4px rgba(0,0,0,0.15);
-    }
-    footer {
-      background-color: #d0e6d0;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      border-top: 4px solid #a9c9a9;
-      color: #2f4f4f;
-    }
-  </style>
+  }
+</style>
+
 </head>
 <body>
   <header>
     <h1>Travaux réalisés</h1>
-    <p>Exemple de projets universitaires</p>
+    <p>recommendé à consulter sur l'ordinateur</p>
   </header>
 
   <main>
@@ -109,3 +132,4 @@
   </footer>
 </body>
 </html>
+
